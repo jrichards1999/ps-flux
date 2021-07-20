@@ -25,7 +25,7 @@ function HomePage() {
           console.log(json.extract);
           console.log(json.thumbnail.source);
         } catch {
-          setTitle("No Match Found");
+          setTitle("No Exact Match Found");
           setContent("");
           setImageSrc("");
         }
