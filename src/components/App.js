@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="container-fluid">
       <ToastContainer autoClose={3000} hideProgressBar />
-      <Header />
       <Switch>
         {" "}
         {/*Switch is order dependent, paths are evaluated linearly.*/}
