@@ -39,6 +39,12 @@ function HomePage() {
       <SearchContainer>
         <StyledInput
           onChange={(event) => setSearchBoxText(event.target.value)}
+          onKeyDown={(ev) => {
+            if (ev.key === "Enter") {
+              ev.preventDefault();
+              handleClick();
+            }
+          }}
         ></StyledInput>
         <StyledLink onClick={handleClick} className="btn btn-primary">
           Search
